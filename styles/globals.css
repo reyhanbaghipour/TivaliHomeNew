@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('./uicons-regular-rounded.css');
+@import url('./uicons-solid-rounded.css');
+@import url('./customIcon.css');
+@import url('./ant-design-overrides.css');
+@import url('./_fonts.css');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  direction: rtl;
+  outline: none;
+}
+
+* {
+  font-family: iranyekanPersionNumber,iranyekan, Roboto, Tahoma, serif !important;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #333;
+}
